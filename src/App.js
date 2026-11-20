@@ -2,12 +2,17 @@ import './App.css';
 import './style/Reset.css';
 import { BrowserRouter } from 'react-router-dom';
 import MainContent from './components/MainContent';
-import './style/MainContent.css'
+import Header from './layout/Header';
+import Footer from './layout/Footer';
 
 function App() {
   return (
     <>
-      <MainContent />
+      <BrowserRouter>
+        <Header />
+        <MainContent />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
