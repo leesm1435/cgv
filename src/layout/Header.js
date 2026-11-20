@@ -1,6 +1,6 @@
 import React from 'react'
-import '../css/reset.css'
-import '../css/header.css'
+import '../style/Reset.css'
+import '../style/header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
