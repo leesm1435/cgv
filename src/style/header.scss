@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+
+
+@mixin testbox($c){
+  border: 1px solid #333;
+  background-color: $c;
+}
+
+header{
+  position: relative;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  @include testbox(red);
+  >h1{
+    @include testbox(orange);
+    width: 180px;
+    height: 80px;
+    padding: 10px 20px;
+    >a{
+      align-items: center;
+      >img{
+        display: block;
+        width: 100%;
+        height:100%;
+      }
+    }
+  }//h1
+  >.gnb{
+    width: 500px;
+    height: 100%;
+    @include testbox(orange);
+  }//gnb
+  >.lnb{
+    width: 200px;
+    height: 50px;
+    @include testbox(green);
+  }//lnb
+  >.iconBox{
+    width: 200px;
+    height: 100%;
+    @include testbox(orange);
+  }
+}

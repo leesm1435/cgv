@@ -1,24 +1,68 @@
 @charset "utf-8";
 
-$ContentBoxSize : 1200px;
-$BoxCenter: 0 auto;
-
 section {
-  width: $ContentBoxSize;
-  margin: $BoxCenter;
+  width: 1200px;
+  margin: 0 auto;
+  background: #ccc;
 
   > h2 {display: none;} // h2
 
-  > .MainContentPosterList {
-    
+  > .M_MC_MovieList {
+      display: flex;
+      justify-content: space-around;
     > li {
+        width: 200px;
+      > img {
+        width: 100%;
+        border-radius: 10px;
+      } // img
 
-      > img {} // img
+      > button {
+        width: 200px;
+        height: 40px;
+        margin-top: 10px;
+        background: #E63238;
+        box-sizing: border-box;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 10px;
 
-      > button {} // button
-
+        &:hover {
+          background: #bd3034;
+        } // button:hover
+      } // button
     } // li
-
   } // MainContentPosterList
 
+  > .M_MC_QuickBtn {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+
+    > li {
+      width: 50%;
+      text-align: center;
+      background-color: #f00;
+      border: 1px solid #fff;
+      height: 50px;
+      line-height: 50px;
+      
+      &:first-child {
+        border-radius: 10px 0px 0px 10px;
+        border-right: none;
+
+      } // first-child
+
+      &:last-child {
+        border-radius: 0px 10px 10px 0px;
+      } //last-child
+
+      > a {
+        text-decoration: none;
+        color: #fff;
+      }
+    } //li
+  } // M_MC_QuickBtn
 } //section

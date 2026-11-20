@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Link } from "react-router-dom";
+import '../style/MainContent.css'
 
 export default function MainContent() {
   return (
     <>
-      <section>
+      <section classNameName='MainContent'>
         <h2>메인콘텐츠 영역</h2>
         {/* 콘텐츠1번 영화 목록 */}
-        <ul class='MainContentPosterList'> 
+        <ul className='M_MC_MovieList'> 
           <li>
             <img src={'/images/MainPic01.jpg'} />
             <button>예매하기</button>
@@ -26,12 +28,12 @@ export default function MainContent() {
         </ul>
         
         {/* 콘텐츠1번 영화 더보기, 빠른예매 */}
-        <ul>
+        <ul className='M_MC_QuickBtn'>
           <li>
-            <a href='movies.html' title='영화 더보기'>영화 더보기</a>
+            <Link to='/'>영화 더보기</Link>
           </li>
           <li>
-            <a href='tickets.html' title='빠른예매'>빠른예매</a>
+            <Link to='/'>빠른 예매</Link>
           </li>
         </ul>
 

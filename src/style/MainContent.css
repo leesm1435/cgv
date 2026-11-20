@@ -1,7 +1,58 @@
 section {
   width: 1200px;
   margin: 0 auto;
+  background: #ccc;
 }
 section > h2 {
   display: none;
+}
+section > .M_MC_MovieList {
+  display: flex;
+  justify-content: space-around;
+}
+section > .M_MC_MovieList > li {
+  width: 200px;
+}
+section > .M_MC_MovieList > li > img {
+  width: 100%;
+  border-radius: 10px;
+}
+section > .M_MC_MovieList > li > button {
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  background: #E63238;
+  box-sizing: border-box;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+section > .M_MC_MovieList > li > button:hover {
+  background: #bd3034;
+}
+section > .M_MC_QuickBtn {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 20px;
+}
+section > .M_MC_QuickBtn > li {
+  width: 50%;
+  text-align: center;
+  background-color: #f00;
+  border: 1px solid #fff;
+  height: 50px;
+  line-height: 50px;
+}
+section > .M_MC_QuickBtn > li:first-child {
+  border-radius: 10px 0px 0px 10px;
+  border-right: none;
+}
+section > .M_MC_QuickBtn > li:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+section > .M_MC_QuickBtn > li > a {
+  text-decoration: none;
+  color: #fff;
 }/*# sourceMappingURL=MainContent.css.map */
