@@ -1,0 +1,7 @@
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+section > h2 {
+  display: none;
+}/*# sourceMappingURL=MainContent.css.map */

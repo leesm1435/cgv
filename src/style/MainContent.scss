@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+$ContentBoxSize : 1200px;
+$BoxCenter: 0 auto;
+
+section {
+  width: $ContentBoxSize;
+  margin: $BoxCenter;
+
+  > h2 {display: none;} // h2
+
+  > .MainContentPosterList {
+    
+    > li {
+
+      > img {} // img
+
+      > button {} // button
+
+    } // li
+
+  } // MainContentPosterList
+
+} //section
