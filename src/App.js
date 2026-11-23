@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import MainContent from './components/MainContent';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
+import Icecon from './components/Icecon';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <MainContent />
+        <Icecon />
         <Footer />
       </BrowserRouter>
     </>
