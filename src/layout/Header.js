@@ -71,13 +71,15 @@ export default function Header() {
   </ul>
       {/* //////////////////////////////// */}
     <div className='iconBox'>
-
-    <div className="searchbox">
-    <FontAwesomeIcon icon={faMagnifyingGlass} />
-      <input type="text" id="search" />
-
-    </div>
-    <FontAwesomeIcon icon={faUser} />
+      <div className="searchbox">
+        <Link>
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+        </Link>
+        <input type="text" id="search" />
+      </div>
+      <Link>
+        <FontAwesomeIcon icon={faUser} />
+      </Link>
     </div>
     </header>
     </>
