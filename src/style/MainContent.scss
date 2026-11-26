@@ -1,68 +1,125 @@
-@charset "utf-8";
 
-section {
-  width: 1200px;
-  margin: 0 auto;
-  background: #ccc;
+.MainContent {
+  width: 100%;
+  height: 700px;
+  background: url('../../public/images/MaincontentBg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 
-  > h2 {display: none;} // h2
+  > h2 {
+    display: none;
+  } //h2
 
+  > .M_MC_blind {
+    width: 100%;
+    height: 40px;
+    background: #000;
+  } //M_MC_blind
+
+  // 영화 이미지 목록
   > .M_MC_MovieList {
-      display: flex;
-      justify-content: space-around;
-    > li {
-        width: 200px;
-      > img {
-        width: 100%;
-        border-radius: 10px;
-      } // img
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
 
+    > li {
+      width: 250px;
+
+      > .movieImg {
+        width: 250px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+
+        > img {
+          width: 100%;
+          display: block;
+          border-radius: 5px;
+        } //img
+
+        // 검은색 오버레이
+        > .movieOverlay {
+          position: absolute;
+          top: 0; left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 20px 15px;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: rgba(0, 0, 0, 0.8);
+          color: #fff;
+          text-align: center;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          pointer-events: none;
+
+          > p {
+            font-size: 14px;
+            line-height: 1.8;
+            word-break: keep-all;
+            font-weight: 500;
+          } //p
+        } //movieOverlay
+
+        // 마우스를 올리면 오버레이 표시
+        &:hover {
+          > .movieOverlay {
+            opacity: 1;
+          } //movieOverlay
+        } //hover
+      } //movieImg
+
+      // 예매하기 버튼
       > button {
-        width: 200px;
-        height: 40px;
         margin-top: 10px;
-        background: #E63238;
-        box-sizing: border-box;
+        width: 250px;
+        height: 40px;
         border: none;
+        border-radius: 5px;
+        background: #E63238;
         color: #fff;
         font-size: 16px;
         font-weight: bold;
-        border-radius: 10px;
+        cursor: pointer;
 
         &:hover {
-          background: #bd3034;
-        } // button:hover
-      } // button
-    } // li
-  } // MainContentPosterList
+          background: #bb282d;
+        } //hover
+      } //button
+    } //li
+  } //M_MC_MovieList
 
+  // 영화 더보기, 빠른 예매 버튼
   > .M_MC_QuickBtn {
+    width: 1200px;
+    height: 50px;
+    margin: 60px auto 0;
     display: flex;
-    justify-content: space-around;
-    padding: 30px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
 
     > li {
       width: 50%;
       text-align: center;
-      background-color: #f00;
-      border: 1px solid #fff;
-      height: 50px;
-      line-height: 50px;
-      
+
       &:first-child {
-        border-radius: 10px 0px 0px 10px;
-        border-right: none;
-
-      } // first-child
-
-      &:last-child {
-        border-radius: 0px 10px 10px 0px;
-      } //last-child
+        border-right: 1px solid #fff;
+      } //first-child
 
       > a {
-        text-decoration: none;
+        display: block;
+        width: 100%;
+        line-height: 50px;
         color: #fff;
-      }
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+      } //a
     } //li
-  } // M_MC_QuickBtn
-} //section
+  } //M_MC_QuickBtn
+} //MainContent
