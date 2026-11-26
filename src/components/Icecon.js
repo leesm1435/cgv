@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import '../style/Icecon.css'
 
 function Icecon() {
+
   return (
     <>
       <section className='M_MC_Icecon'>
@@ -18,9 +19,10 @@ function Icecon() {
           </div>
 
           <div className='M_MC_IceconRight'>
+            <p className='p01'># SPORTS</p>
             <h3>2026 KBO 한국시리즈 4차전 - KT 위즈 vs 삼성 라이온즈</h3>
             <p>2026 신한 SOL KBO 포스트시즌<br />CGV 극장 단독 생중계!</p><br />
-            <p>가을야구의 피날레! &lt;한국시리즈&gt;🏆🔥</p><br />
+            <p>가을야구의 피날레! &lt;한국시리즈&gt;</p><br />
             <p>트로피를 향한 최후의 승부,<br />마지막까지 뜨겁게 CGV에서 함께 응원하자!</p>
 
             <ul>
