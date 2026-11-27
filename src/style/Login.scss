@@ -1,0 +1,94 @@
+
+.LP_wrap {
+  > .LP_h1 {
+    
+  } // .LP_h1
+
+  > form {
+    > .LP_h2 {
+      
+    } // .LP_h2
+
+    > p {
+      
+    } // p
+
+    > input {
+      
+    } // input
+
+    > input[type="text"] {
+      
+    } // input[type="text"]
+
+    > input[type="password"] {
+      
+    } // input[type="password"]
+
+    > div {
+      > input[type="checkbox"] {
+        
+      } // input[type="checkbox"]
+
+      > label {
+        
+      } // label
+    } // div
+
+    > button[type="submit"] {
+      
+    } // button[type="submit"]
+
+    > .LP_accountLink {
+      display: flex;
+
+      > li {
+        > a {
+          text-decoration: none;
+        } // a
+      } // li
+    } // .LP_accountLink
+
+    > a {
+      
+    } // a
+
+    > .LP_easyTitle {
+      display: flex;
+      align-items: center;
+
+      > span {
+        flex: 1;
+      } // span
+
+      > p {
+        
+      } // p
+    } // .LP_easyTitle
+
+    > .LP_easyList {
+      display: flex;
+      justify-content: center;
+
+      > li {
+        > button {
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+        } // button
+
+        > .LP_naver {
+          
+        } // .LP_naver
+
+        > .LP_kakao {
+          
+        } // .LP_kakao
+
+        > .LP_google {
+          
+        } // .LP_google
+      } // li
+    } // .LP_easyList
+  } // form
+} // .LP_wrap

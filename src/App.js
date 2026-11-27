@@ -5,6 +5,7 @@ import MainContent from './components/MainContent';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
 import Icecon from './components/Icecon';
+import Login from './components/Login';
 
 function App() {
   return (

@@ -1,0 +1,22 @@
+.LP_wrap > form > .LP_accountLink {
+  display: flex;
+}
+.LP_wrap > form > .LP_accountLink > li > a {
+  text-decoration: none;
+}
+.LP_wrap > form > .LP_easyTitle {
+  display: flex;
+  align-items: center;
+}
+.LP_wrap > form > .LP_easyTitle > span {
+  flex: 1;
+}
+.LP_wrap > form > .LP_easyList {
+  display: flex;
+  justify-content: center;
+}
+.LP_wrap > form > .LP_easyList > li > button {
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}/*# sourceMappingURL=Login.css.map */
