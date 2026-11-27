@@ -11,11 +11,10 @@ export default function Header() {
     <>
       <header>
     <h1>
-      <Link to="#" title="상단로고">
-        <img src="/images/CGV.png" />
+      <Link to="/cgv/" title="">
+        <img src="/images/CGV.png" alt='로고'/>
       </Link>
     </h1>
-      {/* //////////////////////////////// */}
     <nav className="gnb">
       <ul>
         <li>
@@ -65,7 +64,7 @@ export default function Header() {
       {/* //////////////////////////////// */}
 
   <ul className="lnb">
-    <li><Link to="로그인">로그인</Link></li>
+    <li><Link to="/login">로그인</Link></li>
     <li><Link to="회원가입">회원가입</Link></li>
     <li><Link to="고객센터">고객센터</Link></li>
   </ul>

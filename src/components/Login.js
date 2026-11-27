@@ -40,14 +40,14 @@ function Login() {
                 <Link to="/signup">회원가입</Link>
               </li>
               <li>
-                <Link to="/find-id">아이디 찾기</Link>
+                <Link to="/findid">아이디 찾기</Link>
               </li>
               <li>
-                <Link to="/find-password">비밀번호 찾기</Link>
+                <Link to="/findpassword">비밀번호 찾기</Link>
               </li>
             </ul>
 
-            <Link to="/non-members">비회원으로 예매조회</Link>
+            <Link to="/nonemembers">비회원으로 예매조회</Link>
 
             {/* 간편 로그인 */}
             <div className="LP_easyTitle">
@@ -58,7 +58,7 @@ function Login() {
 
             <ul className="LP_easyList">
               <li>
-                <button type="button" className="LP_naver"></button>
+                <button type="button" className="LP_naver">test</button>
               </li>
 
               <li>
