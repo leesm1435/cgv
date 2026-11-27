@@ -10,36 +10,148 @@
 header{
   position: relative;
   display: flex;
-  height: 100px;
+  height: 120px;
+        background-color: #333;
   width: 100%;
-  @include testbox(red);
   >h1{
-    @include testbox(orange);
     width: 180px;
-    height: 80px;
+    height: 100%;
     padding: 10px 20px;
     >a{
       align-items: center;
       >img{
         display: block;
         width: 100%;
-        height:100%;
       }
     }
   }//h1
   >.gnb{
-    width: 500px;
+    width: 800px;
     height: 100%;
-    @include testbox(orange);
+    >ul{
+      display: flex;
+      height: 100%;
+      width: 100%;
+      >li{
+        padding: 0 20px;
+        position: relative;
+        height: 120px;
+        width: 120px;
+        text-align: center;
+        line-height: 120px;
+        justify-content: center;
+        &:hover a{
+          color: #f00;
+        }
+        >a{
+          color: #fff;
+          font-size: 26px;
+          
+        }
+        .sub{
+          position: absolute;
+          display: flex;
+          top: 120px;
+          left: 50%;
+          align-items: center;
+          transform: translateX(-50%);
+          justify-content: center;
+          transition: 1s;
+          height: 0; ///////// transition heght 100%
+          overflow: hidden;
+          width: max-content;
+          padding: 0 150vh;
+          background-color: #223;
+          >li{
+            text-align: center;
+            padding: 0 20px;
+            a{
+              
+              color: #fff;
+            }
+          }
+        }
+        &:nth-child(1):hover > .sub{
+         height: 70% !important;
+       }
+        &:nth-child(2):hover > .sub{
+         height: 70% !important;
+       }
+        &:nth-child(3):hover > .sub{
+         height: 70% !important;
+       }
+        &:nth-child(4):hover > .sub{
+         height: 70% !important;
+       }
+        &:nth-child(5):hover > .sub{
+         height: 70% !important;
+       }
+      }
+    }
   }//gnb
-  >.lnb{
-    width: 200px;
-    height: 50px;
-    @include testbox(green);
-  }//lnb
   >.iconBox{
     width: 200px;
     height: 100%;
-    @include testbox(orange);
   }
-}
+  >.lnb{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    z-index: 10;
+    li{
+      &:not(:last-child)::after{
+        content: '|';
+        padding: 0 10px;
+        color: #999;
+      }
+      a{
+        padding: 5px;
+        line-height: 24px;
+        color: #999;
+      }
+    }
+  }//lnb
+  .iconBox{
+    position: relative;
+    display: flex;
+    margin-left: auto;
+    line-height: 120px;
+    font-size: 26px;
+    width: 400px;
+    .searchbox{
+      top: 20px;
+      width: 400px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      >input[type=text]{
+        position: absolute;
+        right: 0;
+        margin: 0 20px;
+        width: 200px;//////transiton width: 200px
+        border-radius: 10px;
+        height: 30px;
+        background-color: #333;
+        border: none;//////transition border: 1px solid #fff
+      }
+      a{
+        padding: 0 30px;
+        right: 0;
+        z-index: 10;
+        position: absolute;
+        color: #fff;
+
+      }
+    }
+    >a{
+      padding: 0 20px;
+      top: 20px;
+      position: relative;
+      right: 10px;
+      color: #fff;
+    }
+  }
+}///////////header
