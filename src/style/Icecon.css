@@ -1,22 +1,22 @@
 .M_MC_Icecon {
-  width: 1440px;
-  background: #000000;
-  padding: 100px 0;
+  width: 100%;
+  background: rgb(27, 0, 12);
+  padding: 50px 0;
 }
 .M_MC_Icecon .M_MC_Icecon_inner {
   width: 1200px;
-  margin: 0 auto;
+  margin: 100px auto;
   display: flex;
   justify-content: space-around;
 }
 .M_MC_Icecon .M_MC_Icecon_inner h2 {
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 500;
   color: #fff;
 }
 .M_MC_Icecon .M_MC_Icecon_inner figure {
-  width: 271px;
-  height: 458px;
+  width: 350px;
+  height: 500px;
   margin-top: 60px;
 }
 .M_MC_Icecon .M_MC_Icecon_inner figure a {
@@ -24,6 +24,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  box-shadow: 5px 5px 10px #000;
 }
 .M_MC_Icecon .M_MC_Icecon_inner figure a span {
   position: absolute;
@@ -34,7 +35,7 @@
   align-items: center;
   justify-content: center;
   width: 57px;
-  height: 85px;
+  height: 75px;
   padding-bottom: 12px;
   color: #fff;
   font-size: 36px;
@@ -56,14 +57,18 @@
 .M_MC_Icecon .M_MC_Icecon_inner > .M_MC_IceconRight h3 {
   color: #fff;
   font-size: 30px;
-  font-weight: bold;
-  border-bottom: 2px solid #fff;
+  font-weight: 400;
+  border-bottom: 1px solid #fff;
   line-height: 70px;
   margin-bottom: 20px;
 }
+.M_MC_Icecon .M_MC_Icecon_inner > .M_MC_IceconRight .p01 {
+  font-size: 25px;
+  margin-top: 36px;
+}
 .M_MC_Icecon .M_MC_Icecon_inner > .M_MC_IceconRight p {
   color: #fff;
-  font-size: 20px;
+  font-size: 17px;
   line-height: normal;
 }
 .M_MC_Icecon .M_MC_Icecon_inner > .M_MC_IceconRight > ul {
@@ -81,6 +86,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  box-shadow: 5px 5px 10px #000;
 }
 .M_MC_Icecon .M_MC_Icecon_inner > .M_MC_IceconRight > ul > li a .s01 {
   position: absolute;
@@ -91,7 +97,7 @@
   align-items: center;
   justify-content: center;
   width: 35px;
-  height: 46px;
+  height: 40px;
   padding-bottom: 12px;
   color: #fff;
   font-size: 20px;
@@ -108,7 +114,7 @@
   align-items: center;
   justify-content: center;
   width: 35px;
-  height: 46px;
+  height: 40px;
   padding-bottom: 12px;
   color: #fff;
   font-size: 20px;
