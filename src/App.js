@@ -13,6 +13,7 @@ function App() {
         <Header />
 
         <Routes>
+        <Route path='/' element={<Main />} />
         <Route path='/cgv/' element={<Main />} />
         <Route path='/login' element={<Login />} />
 

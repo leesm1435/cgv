@@ -1,6 +1,6 @@
 .MainContent {
   width: 100%;
-  height: 72vh;
+  height: 650px;
   background: url("../../public/images/MaincontentBg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,7 +17,7 @@
 .MainContent > .M_MC_MovieList {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -25,7 +25,7 @@
   width: 250px;
 }
 .MainContent > .M_MC_MovieList > li > .movieImg {
-  width: 250px;
+  width: 100%;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
@@ -80,7 +80,7 @@
 .MainContent > .M_MC_QuickBtn {
   width: 1200px;
   height: 50px;
-  margin: 60px auto 0;
+  margin: 70px auto 0;
   display: flex;
   border: 1px solid #fff;
   border-radius: 5px;

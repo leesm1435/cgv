@@ -28,7 +28,7 @@ function Login() {
               required
             />
 
-            <div>
+            <div className="save_idWrap">
               <input type="checkbox" id="save_id" />
               <label htmlFor="save_id">아이디 저장</label>
             </div>
@@ -36,15 +36,9 @@ function Login() {
             <button type="submit">로그인</button>
 
             <ul className="LP_accountLink">
-              <li>
-                <Link to="/signup">회원가입</Link>
-              </li>
-              <li>
-                <Link to="/findid">아이디 찾기</Link>
-              </li>
-              <li>
-                <Link to="/findpassword">비밀번호 찾기</Link>
-              </li>
+              <li><Link to="/signup">회원가입</Link></li>
+              <li><Link to="/findid">아이디 찾기</Link></li>
+              <li><Link to="/findpassword">비밀번호 찾기</Link></li>
             </ul>
 
             <Link to="/nonemembers">비회원으로 예매조회</Link>
@@ -58,15 +52,15 @@ function Login() {
 
             <ul className="LP_easyList">
               <li>
-                <button type="button" className="LP_naver">test</button>
+                <button type="button" className="LP_naver">naver</button>
               </li>
 
               <li>
-                <button type="button" className="LP_kakao"></button>
+                <button type="button" className="LP_kakao">kakao</button>
               </li>
 
               <li>
-                <button type="button" className="LP_google"></button>
+                <button type="button" className="LP_google">google</button>
               </li>
             </ul>
           </form>

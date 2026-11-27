@@ -1,22 +1,99 @@
+.LP_wrap {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.LP_wrap > .LP_h1 {
+  display: none;
+}
+.LP_wrap > form {
+  width: 500px;
+  margin: 0 auto;
+}
+.LP_wrap > form > .LP_h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 100px;
+}
+.LP_wrap > form > p {
+  text-align: left;
+  font-size: 16px;
+  padding: 40px 0px 10px 0px;
+  text-indent: 5px;
+}
+.LP_wrap > form > input {
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #636262;
+  box-sizing: border-box;
+}
+.LP_wrap > form > input[type=text] {
+  padding: 0px 10px;
+}
+.LP_wrap > form > input[type=text]::-moz-placeholder {
+  color: #8d8d8d;
+  font-size: 16px;
+}
+.LP_wrap > form > input[type=text]::placeholder {
+  color: #8d8d8d;
+  font-size: 16px;
+}
+.LP_wrap > form > input[type=password] {
+  padding: 0px 10px;
+}
+.LP_wrap > form > input[type=password]::-moz-placeholder {
+  color: #8d8d8d;
+  font-size: 16px;
+}
+.LP_wrap > form > input[type=password]::placeholder {
+  color: #8d8d8d;
+  font-size: 16px;
+}
+.LP_wrap > form > .save_idWrap {
+  text-align: left;
+  padding: 15px 0px 15px 5px;
+  font-size: 16px;
+}
+.LP_wrap > form > .save_idWrap > input[type=checkbox] {
+  transform: scale(1.3);
+  accent-color: #E63238;
+  cursor: pointer;
+}
+.LP_wrap > form > button[type=submit] {
+  width: 500px;
+  height: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: none;
+  background: #E63238;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
 .LP_wrap > form > .LP_accountLink {
   display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.LP_wrap > form > .LP_accountLink > li {
+  width: 200px;
+}
+.LP_wrap > form > .LP_accountLink > li:first-child, .LP_wrap > form > .LP_accountLink > li:nth-child(2) {
+  border-right: 1px solid #333;
 }
 .LP_wrap > form > .LP_accountLink > li > a {
+  display: block;
   text-decoration: none;
+  color: #333;
 }
-.LP_wrap > form > .LP_easyTitle {
-  display: flex;
-  align-items: center;
-}
-.LP_wrap > form > .LP_easyTitle > span {
-  flex: 1;
-}
-.LP_wrap > form > .LP_easyList {
-  display: flex;
-  justify-content: center;
+.LP_wrap > form > a {
+  display: inline-block;
+  padding: 20px 0px 20px 0px;
+  color: #333;
 }
 .LP_wrap > form > .LP_easyList > li > button {
   border: none;
-  border-radius: 50%;
+  border-radius: 5px;
   cursor: pointer;
 }/*# sourceMappingURL=Login.css.map */
