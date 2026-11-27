@@ -1,38 +1,41 @@
-section {
-  width: 1200px;
-  margin: 0 auto;
-  background: #ccc;
+.MainContent {
+  width: 100%;
+  height: 72vh;
+  background: url("../../public/images/MaincontentBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
-section > h2 {
+.MainContent > h2 {
   display: none;
 }
-section > .M_MC_blind {
+.MainContent > .M_MC_blind {
   width: 100%;
   height: 40px;
   background: #000;
 }
-section > .M_MC_MovieList {
+.MainContent > .M_MC_MovieList {
   width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
 }
-section > .M_MC_MovieList > li {
+.MainContent > .M_MC_MovieList > li {
   width: 250px;
 }
-section > .M_MC_MovieList > li > .movieImg {
+.MainContent > .M_MC_MovieList > li > .movieImg {
   width: 250px;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
 }
-section > .M_MC_MovieList > li > .movieImg > img {
+.MainContent > .M_MC_MovieList > li > .movieImg > img {
   width: 100%;
   display: block;
   border-radius: 5px;
 }
-section > .M_MC_MovieList > li > .movieImg > .movieOverlay {
+.MainContent > .M_MC_MovieList > li > .movieImg > .movieOverlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -50,16 +53,16 @@ section > .M_MC_MovieList > li > .movieImg > .movieOverlay {
   transition: opacity 0.3s ease;
   pointer-events: none;
 }
-section > .M_MC_MovieList > li > .movieImg > .movieOverlay > p {
+.MainContent > .M_MC_MovieList > li > .movieImg > .movieOverlay > p {
   font-size: 14px;
   line-height: 1.8;
   word-break: keep-all;
   font-weight: 500;
 }
-section > .M_MC_MovieList > li > .movieImg:hover > .movieOverlay {
+.MainContent > .M_MC_MovieList > li > .movieImg:hover > .movieOverlay {
   opacity: 1;
 }
-section > .M_MC_MovieList > li > button {
+.MainContent > .M_MC_MovieList > li > button {
   margin-top: 10px;
   width: 250px;
   height: 40px;
@@ -71,10 +74,10 @@ section > .M_MC_MovieList > li > button {
   font-weight: bold;
   cursor: pointer;
 }
-section > .M_MC_MovieList > li > button:hover {
+.MainContent > .M_MC_MovieList > li > button:hover {
   background: #bb282d;
 }
-section > .M_MC_QuickBtn {
+.MainContent > .M_MC_QuickBtn {
   width: 1200px;
   height: 50px;
   margin: 60px auto 0;
@@ -82,14 +85,14 @@ section > .M_MC_QuickBtn {
   border: 1px solid #fff;
   border-radius: 5px;
 }
-section > .M_MC_QuickBtn > li {
+.MainContent > .M_MC_QuickBtn > li {
   width: 50%;
   text-align: center;
 }
-section > .M_MC_QuickBtn > li:first-child {
+.MainContent > .M_MC_QuickBtn > li:first-child {
   border-right: 1px solid #fff;
 }
-section > .M_MC_QuickBtn > li > a {
+.MainContent > .M_MC_QuickBtn > li > a {
   display: block;
   width: 100%;
   line-height: 50px;
