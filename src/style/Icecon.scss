@@ -36,7 +36,7 @@
 
 .M_MC_Icecon{
   width: 100%;
-  background: rgb(27, 0, 12);
+  background: #e6e6e6;
   padding: 50px 0;
   .M_MC_Icecon_inner{
     width: 1200px;
@@ -45,8 +45,8 @@
     justify-content: space-around;
     h2{
       font-size: 50px;
-      font-weight: 500;
-      color: #fff;
+      font-weight: bold;
+      color: #191919;
     }
     figure{
       width: 350px; height: 500px;
@@ -74,17 +74,18 @@
       width: 760px;
       margin-top: 70px;
       h3{
-      color: #fff;
-      font-size: 30px;
+      color: #333;
+      font-size: 28px;
       font-weight: 400;
-      border-bottom: 1px solid #fff;
+      border-bottom: 1px solid #333;
       line-height: 70px;
       margin-bottom: 20px;
       }
-      .p01{font-size: 25px; margin-top: 36px;}
+      .p01{font-size: 25px; margin-top: 36px; color: #333;}
       p{
-      color: #fff;
-      font-size: 17px;
+      color: #575757;
+      font-size: 16px;
+      font-weight: 500;
       line-height: normal;
 
       }
